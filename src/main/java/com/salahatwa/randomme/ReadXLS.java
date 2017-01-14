@@ -111,7 +111,6 @@ public class ReadXLS {
         ReadXLS r=ReadXLS.getInstance();
         List<ReadedBean> oldList= r.readXLSFromFile("src/Main/java/testReadStudents.xlsx");
         List<ReadedBean> newList=RandomOperation.getRandomNumberFromList(3, oldList);
-        
         for (ReadedBean readedBean : newList) {
             System.err.println(readedBean.getCell());
         }
